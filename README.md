@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Yellow Taxi Trip Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi ini adalah dashboard analitik untuk data perjalanan taksi kuning di New York City, memungkinkan pengguna untuk melihat dan memfilter data perjalanan berdasarkan beberapa kriteria.
 
-## Available Scripts
+## Fitur
 
-In the project directory, you can run:
+- Visualisasi perjalanan taksi menggunakan peta interaktif.
+- Filter berdasarkan jenis pembayaran, waktu pickup, waktu dropoff, kisaran tarif, dan kisaran jarak.
+- Menampilkan detail perjalanan seperti waktu pickup, waktu dropoff, tarif, dan jarak.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sebelum menjalankan proyek ini, pastikan Anda telah menginstal:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) (v14.x atau lebih tinggi)
+- [npm](https://www.npmjs.com/) (biasanya sudah terpasang dengan Node.js)
 
-### `npm test`
+## Menjalankan Proyek Secara Lokal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ikuti langkah-langkah berikut untuk mengatur dan menjalankan proyek ini secara lokal:
 
-### `npm run build`
+### 1. Clone Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone repositori ini ke komputer lokal Anda menggunakan git:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/aaridhon19/Yellow_Taxi_Trip_FE.git
+cd repository-name
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Instalation
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Add ENV 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+REACT_APP_API_URL_BE=https://yellow-taxi-trip-be.vercel.app/api/trips
+REACT_APP_API_URL_BE_FILTER=https://yellow-taxi-trip-be.vercel.app/api/trips/filter
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Start Project 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+### 5. Open Your Browser
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+http://localhost:3000 
+```
